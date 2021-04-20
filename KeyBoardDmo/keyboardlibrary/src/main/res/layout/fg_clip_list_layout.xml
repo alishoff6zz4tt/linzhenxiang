@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+    skin:xxx:background
+    skin:xxx:src (only for ImageView)
+    skin:xxx:selector
+    skin:xxx:vector
+    skin:xxx:textColor (ColorStateList or Color)
+    skin:xxx:switch (only for switch)
+    skin:xxx:divider (for ListView or LinearLayout)
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLIP_LIST"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+</LinearLayout>

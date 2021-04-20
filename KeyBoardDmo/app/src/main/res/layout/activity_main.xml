@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.keyboard.MainActivity">
+
+    <EditText
+        android:gravity="center_vertical"
+        android:id="@+id/main_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:singleLine="true"
+        />
+
+    <com.key.KeyboardRelativeLayout
+        android:id="@+id/mian_key_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+    </com.key.KeyboardRelativeLayout>
+</RelativeLayout>

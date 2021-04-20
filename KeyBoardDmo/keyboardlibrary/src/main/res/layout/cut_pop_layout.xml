@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+    skin:xxx:background
+    skin:xxx:src (only for ImageView)
+    skin:xxx:selector
+    skin:xxx:vector
+    skin:xxx:textColor (ColorStateList or Color)
+    skin:xxx:switch (only for switch)
+    skin:xxx:divider (for ListView or LinearLayout)
+ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/cut_pop_content"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/clip_tab_parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/clip_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/clip_arrow_divider"
+                app:tabMode="scrollable"></android.support.design.widget.TabLayout>
+
+            <View
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#b9b9b9"
+                android:id="@+id/clip_arrow_divider"
+                android:layout_alignLeft="@+id/key_board_arrow"
+                android:layout_width="2px"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:tint="#717171"
+                android:clickable="true"
+                android:id="@+id/key_board_arrow"
+                android:layout_width="56dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="?attr/selectableItemBackground"
+                android:src="@mipmap/ic_keyboard_arrow" />
+        </RelativeLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/clip_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/clip_tab_parent_layout"
+            android:background="#f1f2f2"></android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</RelativeLayout>
